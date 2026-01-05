@@ -1,0 +1,16 @@
+# Ignore virtual environment
+myenv/
+venv/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment and secret files
+.env
+apikeys.json
+
+# OS / Editor specific
+.DS_Store
+*.log
