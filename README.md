@@ -1,1 +1,1 @@
-# AI-Driven-hypertension-prevention-and-wellness-app
+# AI-Driven-hypertension and Diabetes-prevention-and-wellness-app
