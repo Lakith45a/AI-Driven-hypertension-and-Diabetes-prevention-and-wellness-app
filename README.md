@@ -1,5 +1,5 @@
 # AI-Driven-hypertension and Diabetes-prevention-and-wellness-app
-## Individual Component: Early Hypertension Risk Prediction & Personalized Recommandation (IT22178886)
+## Individual Component: Early Hypertension Risk Prediction & Personalized Recommendation (IT22178886)
 
 
 ## 📘 Project Overview
