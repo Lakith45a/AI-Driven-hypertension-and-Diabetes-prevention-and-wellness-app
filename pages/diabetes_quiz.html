@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diet Questionnaire — Diabetes Staging Assessment Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Diabetes Staging Assessment Portal</a>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Diet Questionnaire</h3>
+              <p class="small text-muted">Answer these 5 quick questions to generate a diet quality score (0 = poor, 10 = excellent). You will then continue to the diabetes form with the score pre-filled.</p>
+
+              <form id="diet-quiz">
+                <ol class="list-group list-group-flush mb-3">
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>1. How often do you eat fresh fruits and vegetables?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="10" id="q1a"><label class="form-check-label" for="q1a">Daily (multiple servings)</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="6" id="q1b"><label class="form-check-label" for="q1b">Daily (small servings)</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="3" id="q1c"><label class="form-check-label" for="q1c">Occasionally</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="0" id="q1d"><label class="form-check-label" for="q1d">Rarely/never</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>2. How often do you consume processed or fast food?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="10" id="q2a"><label class="form-check-label" for="q2a">Rarely/never</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="6" id="q2b"><label class="form-check-label" for="q2b">Once a week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="3" id="q2c"><label class="form-check-label" for="q2c">Several times a week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="0" id="q2d"><label class="form-check-label" for="q2d">Daily</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>3. How much sugary drinks (soda, sweetened beverages) do you drink?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="10" id="q3a"><label class="form-check-label" for="q3a">None or rarely</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="6" id="q3b"><label class="form-check-label" for="q3b">1–3 per week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="3" id="q3c"><label class="form-check-label" for="q3c">Several per week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="0" id="q3d"><label class="form-check-label" for="q3d">Daily</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>4. How often do you eat whole grains (brown rice, whole wheat)?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="10" id="q4a"><label class="form-check-label" for="q4a">Daily</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="6" id="q4b"><label class="form-check-label" for="q4b">Several times a week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="3" id="q4c"><label class="form-check-label" for="q4c">Rarely</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="0" id="q4d"><label class="form-check-label" for="q4d">Never</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>5. How often do you consume fried foods?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="10" id="q5a"><label class="form-check-label" for="q5a">Rarely/never</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="6" id="q5b"><label class="form-check-label" for="q5b">Once a week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="3" id="q5c"><label class="form-check-label" for="q5c">Several times a week</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="0" id="q5d"><label class="form-check-label" for="q5d">Daily</label></div>
+                    </div>
+                  </li>
+                </ol>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div id="quiz-result" class="text-muted"></div>
+                  <div>
+                    <button type="button" id="quiz-next" class="btn btn-primary">Next</button>
+                    <a href="index.html" class="btn btn-outline-secondary ms-2">Cancel</a>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('quiz-next').addEventListener('click', function(){
+        const form = document.getElementById('diet-quiz');
+        const data = new FormData(form);
+        const answers = [];
+        for (let i=1;i<=5;i++){
+          const v = data.get('q'+i);
+          if (!v) { document.getElementById('quiz-result').innerText = 'Please answer all questions.'; return; }
+          answers.push(Number(v));
+        }
+        // average and normalize to 0-10 scale
+        const sum = answers.reduce((a,b)=>a+b,0);
+        const mean = sum / answers.length;
+        const score = Math.round(mean * 10) / 10; 
+        localStorage.setItem('diet_score', String(score));
+        // redirect to form
+        window.location.href = 'diabetes.html';
+      });
+    </script>
+  </body>
+</html>
