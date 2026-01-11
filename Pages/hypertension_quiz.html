@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stress Questionnaire — Hypertension Staging Assessment Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Hypertension Staging Assessment Portal</a>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Lifestyle Questionnaire</h3>
+              <p class="small text-muted">Answer six quick questions covering stress, salt intake and coping behaviours. The questionnaire will compute a stress score and a salt-intake score (0 = low, 10 = high) and prefill the hypertension form.</p>
+
+              <form id="stress-quiz">
+                <ol class="list-group list-group-flush mb-3">
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>1. How often do you feel overwhelmed by tasks?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="10" id="s1a"><label class="form-check-label" for="s1a">Very often</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="6" id="s1b"><label class="form-check-label" for="s1b">Sometimes</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="3" id="s1c"><label class="form-check-label" for="s1c">Rarely</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q1" value="0" id="s1d"><label class="form-check-label" for="s1d">Never</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>2. How well do you sleep most nights?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="0" id="s2a"><label class="form-check-label" for="s2a">Very well</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="3" id="s2b"><label class="form-check-label" for="s2b">Fair</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="6" id="s2c"><label class="form-check-label" for="s2c">Poor</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q2" value="10" id="s2d"><label class="form-check-label" for="s2d">Very poor</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>3. How often do you feel anxious or worried?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="10" id="s3a"><label class="form-check-label" for="s3a">Very often</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="6" id="s3b"><label class="form-check-label" for="s3b">Sometimes</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="3" id="s3c"><label class="form-check-label" for="s3c">Rarely</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q3" value="0" id="s3d"><label class="form-check-label" for="s3d">Never</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>4. How often do you use unhealthy coping (excessive alcohol, tobacco, overeating)?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="10" id="s4a"><label class="form-check-label" for="s4a">Very often</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="6" id="s4b"><label class="form-check-label" for="s4b">Sometimes</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="3" id="s4c"><label class="form-check-label" for="s4c">Rarely</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q4" value="0" id="s4d"><label class="form-check-label" for="s4d">Never</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>5. How supported do you feel by friends/family?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="0" id="s5a"><label class="form-check-label" for="s5a">Very supported</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="3" id="s5b"><label class="form-check-label" for="s5b">Somewhat supported</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="6" id="s5c"><label class="form-check-label" for="s5c">Not much support</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q5" value="10" id="s5d"><label class="form-check-label" for="s5d">No support</label></div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="mb-2"><strong>6. How much salt do you typically add/use in your diet?</strong></div>
+                    <div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q6" value="0" id="salt1"><label class="form-check-label" for="salt1">Rarely/never (low)</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q6" value="4" id="salt2"><label class="form-check-label" for="salt2">Occasionally</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q6" value="7" id="salt3"><label class="form-check-label" for="salt3">Often</label></div>
+                      <div class="form-check"><input class="form-check-input" type="radio" name="q6" value="10" id="salt4"><label class="form-check-label" for="salt4">Daily/high</label></div>
+                    </div>
+                  </li>
+                </ol>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div id="quiz-result" class="text-muted"></div>
+                  <div>
+                    <button type="button" id="quiz-next" class="btn btn-primary">Next</button>
+                    <a href="index.html" class="btn btn-outline-secondary ms-2">Cancel</a>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.getElementById('quiz-next').addEventListener('click', function(){
+        const form = document.getElementById('stress-quiz');
+        const data = new FormData(form);
+        const answers = [];
+        for (let i=1;i<=5;i++){
+          const v = data.get('q'+i);
+          if (v === null) { document.getElementById('quiz-result').innerText = 'Please answer all questions including salt intake.'; return; }
+          answers.push(Number(v));
+        }
+        // get salt-specific answer
+        const salt = data.get('q6');
+        if (salt === null) { document.getElementById('quiz-result').innerText = 'Please answer all questions including salt intake.'; return; }
+
+        const sum = answers.reduce((a,b)=>a+b,0);
+        const mean = sum / answers.length;
+        const stressScore = Math.round(mean * 10) / 10;
+        const saltScore = Math.round(Number(salt) * 10) / 10;
+        localStorage.setItem('stress_score', String(stressScore));
+        localStorage.setItem('salt_score', String(saltScore));
+        window.location.href = 'hypertension.html';
+      });
+    </script>
+  </body>
+</html>
