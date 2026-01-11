@@ -1,0 +1,27 @@
+to check_hypertension
+
+http://127.0.0.1:5000/check_hypertension
+
+request
+{
+  "age": 69,
+  "salt": 8,
+  "stress_score": 9,
+  "bp": "Normal",
+  "sleep_hours": 6.4,
+  "bmi": 25.8,
+  "family_history": "Yes",
+  "smoke": "Non-Smoker"
+}
+
+bp: ['Normal' 'Hypertension' 'Prehypertension']
+family_history: ['Yes' 'No']
+stress_score: ['Non-Smoker' 'Smoker']
+
+response
+
+{
+    "hypertension_status": "Yes"
+}
+
+hypertension_status: ["Yes" or "No]
